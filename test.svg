@@ -11,7 +11,9 @@
    
    <script>
     <![CDATA[
-      window.addEventListener("load", function() { … }, false);
+      window.addEventListener("load", function() {
+alert("123");
+}, false);
     ]]>
   </script>
 </svg>
