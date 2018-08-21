@@ -13,4 +13,14 @@
            repeatCount="indefinite"
        /> 
     </polygon> 
+   
+   
+   
+   <script language='JavaScript'>
+           <![CDATA[ 
+
+alert(123);
+ 
+]]>
+       </script>
 </svg>
