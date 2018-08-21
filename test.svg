@@ -6,10 +6,19 @@
     xmlns="http://www.w3.org/2000/svg"  
     xmlns:xlink="http://www.w3.org/1999/xlink"  
 >  
-  
+  <g>
+  <rect x="50" y=50" width="0" height="25" fill="red" />
 <text id="txt" x="65" y="70" style="font-size:12px;" fill="red">asdasdasd</text>  
+  <g/>
   
   
+<script>
+    <![CDATA[
+      window.addEventListener("load", function() {
+document.getElementsByTagName("text")[0].setAttribute("width", "100");
+}, false);
+    ]]>
+  </script>
   
 </svg>  
 
