@@ -2,6 +2,4 @@
 
 # drawio
 
-<object data="your.svg" type="image/svg+xml">
-  <img src="https://github.com/domon80501/drawio/blob/master/test.svg" />
-</object>
+<object data="https://github.com/domon80501/drawio/blob/master/test.svg" type=""></object>
