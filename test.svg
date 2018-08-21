@@ -18,7 +18,7 @@
   <script type="text/javascript"><![CDATA[    
     document.documentElement.addEventListener('keydown',function(evt){
       switch (evt.keyCode){
-        case KEY.w:
+        case KEY.c:
           alert('qweqwe');
         break;      
       }
