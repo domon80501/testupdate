@@ -12,7 +12,7 @@
    <script>
     <![CDATA[
       window.addEventListener("load", function() {
-document.getElementsByTagName("rect")[0].setAttribute("width", "100");
+document.getElementsByTagName("rect")[0].setAttribute("width", "5");
 }, false);
     ]]>
   </script>
