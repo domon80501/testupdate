@@ -8,10 +8,6 @@
     <tspan fill="red">Hello</tspan>,
     <tspan fill="green">world</tspan>!
   </text>
-</svg>
-     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="190">
-   <polygon points="0,10 40,0 0,60 10,60 160,0"
-   style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;"/>
-</svg>
+
      
 </svg>
