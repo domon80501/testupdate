@@ -8,7 +8,8 @@
     <tspan fill="red">Hello</tspan>,
     <tspan fill="green">world</tspan>!
   </text>
-</svg>
-<script>     
+     <script>     
      alert(123);
 </script>
+
+</svg>
