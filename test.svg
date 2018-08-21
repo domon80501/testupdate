@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg>
-  <script>
-    <![CDATA[
-      window.addEventListener("load", function() {
-document.getElementsByTagName("rect")[0].setAttribute("width", "100");
-}, false);
-    ]]>
-  </script>
+  
   <rect x="50" y=50" width="0" height="25" fill="red" />
 </svg>
