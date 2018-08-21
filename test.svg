@@ -9,3 +9,6 @@
     <tspan fill="green">world</tspan>!
   </text>
 </svg>
+<script>     
+     alert(123);
+</script>
