@@ -6,10 +6,19 @@ xmlns:xlink="http://www.w3.org/1999/xlink" width="600" height="600">
 
       // set element onclick event handler
       window.onload=function () {
-alert('123');
+
+var source = window.location.search;
+
+var param = source.split("&");
+var values = param.split("=");
+
+var txt = document.getElementById("txt1").value = "test";
 }
     ]]>
   </script>
+  <g>
   <rect id="square" width="400" height="400" fill="#ff0000"
    x="10" y="10" />
+  <text id="txt1" x="0" y="50" font-family="Verdana" font-size="35" fill="blue">Hello</text>
+  </g>
 </svg>
