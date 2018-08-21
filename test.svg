@@ -8,7 +8,7 @@
       <animateMotion path="M 0 0 L 100 100" dur="5s" fill="freeze" />
     </text>
   </g>
-   <rect x="50" y=50" width="0" height="25" fill="red" />
+   <rect width="300" height="100" style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)" />
    <script>
     <![CDATA[
       window.addEventListener("load", function() {
