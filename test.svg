@@ -8,11 +8,11 @@
       <animateMotion path="M 0 0 L 100 100" dur="5s" fill="freeze" />
     </text>
   </g>
-   
+   <rect x="50" y=50" width="0" height="25" fill="red" />
    <script>
     <![CDATA[
       window.addEventListener("load", function() {
-alert("123");
+document.getElementsByTagName("rect")[0].setAttribute("width", "100");
 }, false);
     ]]>
   </script>
