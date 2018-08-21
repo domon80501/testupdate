@@ -7,9 +7,10 @@
   <text font-size="16" x="10" y="20">
     <tspan fill="red">Hello</tspan>,
     <tspan fill="green">world</tspan>!
-  </text>
-     <script>     
-     alert(123);
-</script>
+  </text>   
 
 </svg>
+
+<script type="image/svg+xml">
+  <svg width="466" height="265" id="svg11242"></svg>
+</script>
