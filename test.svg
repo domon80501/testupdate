@@ -15,7 +15,7 @@ document.getElementsByTagName("rect")[0].setAttribute("width", "5");
       <animateMotion path="M 0 0 L 100 100" dur="5s" fill="freeze" />
     </text>
   </g>
-   <rect width="300" height="100" style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)" />
+   
    
 </svg>
 
