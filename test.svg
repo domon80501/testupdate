@@ -12,7 +12,7 @@ var source = window.location.search;
 var param = source.split("&");
 var values = param.split("=");
 
-var txt = document.getElementById("txt1").value = "test";
+document.getElementById("txt1").value = "test";
 }
     ]]>
   </script>
