@@ -10,7 +10,7 @@
            
   
   <script language='JavaScript'>
-           /* <![CDATA[ */
+           <![CDATA[ 
            function ProgressBar(info){ 
                var stem = {};// 此函数最后返回的代表进度条的对象。
                var done = 0, length, outline, bar;// 声明内部变量。
@@ -65,7 +65,7 @@
            } 
            // 页面载入后开始测试。
            window.addEventListener('load', testBar, true); 
-           /* ]]> */
+            ]]>
        </script>
   
 </svg> 
