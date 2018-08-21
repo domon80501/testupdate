@@ -9,4 +9,15 @@
   
 <text id="txt" x="65" y="70" style="font-size:12px;" fill="red">Hello</text>  
   
+  
+<script>
+    <![CDATA[
+      window.addEventListener("load", function() {
+document.getElementsByTagName("rect")[0].setAttribute("width", "100");
+}, false);
+    ]]>
+  </script>
+  
 </svg>  
+
+
