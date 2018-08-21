@@ -1,19 +1,39 @@
 <?xml version="1.0" standalone="no"?>  
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">  
-  
-<svg  
-    version="1.1"  
-    xmlns="http://www.w3.org/2000/svg"  
-    xmlns:xlink="http://www.w3.org/1999/xlink"  
->  
-  <g>
-  <rect x="50" y=50" width="0" height="25" fill="red" />
-<text id="txt" x="65" y="70" style="font-size:12px;" fill="red">asdasdasd</text>  
-  <g/>
-  
-  
-
-  
-</svg>  
-
+<svg width="340" height="231">
+  <defs>
+    <radialGradient id="r" cx=".5" cy=".5" r=".8">
+      <stop offset="0" stop-color="#000">
+        <animate attributeName="offset" to=".2" dur="1s" repeatCount="indefinite"></animate>
+      </stop>
+      <stop offset=".1" stop-color="#f00">
+        <animate attributeName="offset" to=".3" dur="1s" repeatCount="indefinite"></animate>
+      </stop>
+      <stop offset=".2" stop-color="#000">
+        <animate attributeName="offset" to=".4" dur="1s" repeatCount="indefinite"></animate>
+      </stop>
+      <stop offset=".3" stop-color="#f00">
+        <animate attributeName="offset" to=".5" dur="1s" repeatCount="indefinite"></animate>
+      </stop>
+      <stop offset=".4" stop-color="#000">
+        <animate attributeName="offset" to=".6" dur="1s" repeatCount="indefinite"></animate>
+      </stop>
+      <stop offset=".5" stop-color="#f00">
+        <animate attributeName="offset" to=".7" dur="1s" repeatCount="indefinite"></animate>
+      </stop>
+      <stop offset=".6" stop-color="#000">
+        <animate attributeName="offset" to=".8" dur="1s" repeatCount="indefinite"></animate>
+      </stop>
+      <stop offset=".7" stop-color="#f00">
+        <animate attributeName="offset" to=".9" dur="1s" repeatCount="indefinite"></animate>
+      </stop>
+      <stop offset=".8" stop-color="#000">
+        <animate attributeName="offset" to="1" dur="1s" repeatCount="indefinite"></animate>
+      </stop>
+      <stop offset=".9" stop-color="#f00">
+        <animate attributeName="offset" to="1.1" dur="1s" repeatCount="indefinite"></animate>
+      </stop>
+    </radialGradient>
+  </defs>
+  <rect x="0" y="0" width="340" height="231" fill="url(#r)"></rect>
+</svg>
 
