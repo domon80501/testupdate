@@ -5,16 +5,13 @@
             /* <![CDATA[ */
             function mimicRadio(){ 
                 var radName = 'pRadio', selectedId = 'pRadioSelected'; 
-                var ns = 'http://www.w3.org/2000/svg';//SVG 元素的命名空间。
+                var ns = 'http://www.w3.org/2000/svg';
                 var circles = document.getElementsByTagNameNS(ns, 'circle'); 
-                var selected = document.getElementById(selectedId);// 用于模拟选中状态的实心圆。
+                var selected = document.getElementById(selectedId);
                 var circle; 
                 for (var i = 0; i < circles.length; i++) { 
                     circle = circles[i]; 
                     if (circle.getAttribute('name') === radName) { 
-// 上面提到过，在 XML 的 DOM 中，没有 getElementsByName 方法，所以我们需要手工检查元素的 name 属性。
-// 为 circle 元素添加鼠标响应。
-// 通过设置实心圆的位置和 style 中的 display 值，模拟单选钮被选中的行为。
                         circle.addEventListener('click', function(){ 
                             selected.setAttribute('cx', this.getAttribute('cx')); 
                             selected.setAttribute('cy', this.getAttribute('cy')); 
