@@ -6,19 +6,8 @@ xmlns:xlink="http://www.w3.org/1999/xlink" width="600" height="600">
 
       // set element onclick event handler
       window.onload=function () {
-
-         var square = document.getElementById("square");
-
-         // onclick event handler, change circle radius
-         square.onclick = function() {
-            var color = this.getAttribute("fill");
-            if (color == "#ff0000") {
-               this.setAttribute("fill", "#0000ff");
-            } else {
-               this.setAttribute("fill","#ff0000");
-            }
-         }
-      }
+alert('123');
+}
     ]]>
   </script>
   <rect id="square" width="400" height="400" fill="#ff0000"
