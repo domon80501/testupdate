@@ -1,74 +1,50 @@
 <html xmlns="http://www.w3.org/1999/xhtml"> 
-   <head> 
-       <title> 进度条 </title> 
-       <script language='JavaScript'>
-           /* <![CDATA[ */
-           function ProgressBar(info){ 
-               var stem = {};// 此函数最后返回的代表进度条的对象。
-               var done = 0, length, outline, bar;// 声明内部变量。
-                
-               bar = document.getElementById('done');// 进度条中绿色的变化部分。
-               length = 80; 
-                
-               // 重置进度到零。
-               function reset(){ 
-                   return to(0); 
-               } 
-               // 设置进度到某个值。
-               function to(value){ 
-                   if (value >= 100) { 
-                       done = 100; 
-                       bar.setAttribute('width', length); 
-                   } 
-                   else { 
-                       done = value; 
-                       bar.setAttribute('width', Math.round(done * length / 100)); 
-                   } 
-                   return stem; 
-               } 
-               // 进度变化某个值。
-               function advance(step){ 
-                   return to(done + step); 
-               } 
-               // 以下给进度条对象添加方法。
-               // 获得当前进度值。
-               stem.getDone = function(){ 
-                   return done 
-               }; 
-               stem.reset = reset; 
-               stem.to = to; 
-               stem.advance = advance; 
-               return stem;// 返回可供脚本使用的进度条对象。
-           } 
-           // 测试进度条对象。
-           function testBar(){ 
-               var bar = ProgressBar(); 
-               // 此内部函数每运行一次，增加进度值 1，直到进度值为 100。
-               function test(){ 
-                   if (bar.getDone() === 100) { 
-                       clearInterval(id); 
-                   } 
-                   else { 
-                       bar.advance(1); 
-                   } 
-               } 
-               // 每十分之一秒改变一次进度。
-               var id = setInterval(test, 100); 
-           } 
-           // 页面载入后开始测试。
-           window.addEventListener('load', testBar, true); 
-           /* ]]> */
-       </script>
-   </head> 
-   <body> 
-       <div id='svgDiv'> 
-           <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
-           viewBox="0 0 100 100" style="border:1px solid; width:100px; height:100px; "> 
-           <g id='progBar'> 
-           <rect x='10' y='45' width='80' height='10' stroke='grey' fill='white'/> 
-           <rect id='done' x='10' y='45' width='0' height='10' fill='green'/> 
-               </g> 
-           </svg> 
-       </div> 
-   </body> 
-</html>
+    <head> 
+        <title> 模拟单选钮 1</title> 
+        <script language='JavaScript'>
+            /* <![CDATA[ */
+            function mimicRadio(){ 
+                var radName = 'pRadio', selectedId = 'pRadioSelected'; 
+                var ns = 'http://www.w3.org/2000/svg';//SVG 元素的命名空间。
+                var circles = document.getElementsByTagNameNS(ns, 'circle'); 
+                var selected = document.getElementById(selectedId);// 用于模拟选中状态的实心圆。
+                var circle; 
+                for (var i = 0; i < circles.length; i++) { 
+                    circle = circles[i]; 
+                    if (circle.getAttribute('name') === radName) { 
+// 上面提到过，在 XML 的 DOM 中，没有 getElementsByName 方法，所以我们需要手工检查元素的 name 属性。
+// 为 circle 元素添加鼠标响应。
+// 通过设置实心圆的位置和 style 中的 display 值，模拟单选钮被选中的行为。
+                        circle.addEventListener('click', function(){ 
+                            selected.setAttribute('cx', this.getAttribute('cx')); 
+                            selected.setAttribute('cy', this.getAttribute('cy')); 
+                            selected.style.display = 'block'; 
+                        }, true) 
+                    } 
+                } 
+                 
+            } 
+             
+            window.addEventListener('load', mimicRadio, true); 
+            /* ]]> */
+        </script>
+    </head> 
+    <body> 
+        <div id='svgDiv'> 
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 120 100"
+style="border:1px solid; width:120px; height:100px; "> 
+     <circle name='pRadio' cx="20" cy="50" r="6" stroke="black"
+     stroke-width='0.5' fill="white" /> 
+     <text x='28' y='53'> 
+     上升
+     </text> 
+     <circle name='pRadio' cx="70" cy="50" r="6" stroke="black"
+     stroke-width='0.5' fill="white"/> 
+     <text x='78' y='53'> 
+     下降
+     </text> 
+     <circle id='pRadioSelected' cx="20" cy="50" r="2" style='display:none;'/> 
+            </svg> 
+        </div> 
+    </body> 
+ </html>
