@@ -8,9 +8,11 @@
     <tspan fill="red">Hello</tspan>,
     <tspan fill="green">world</tspan>!
   </text>   
+     
+     <script type="image/svg+xml">
+  <svg width="466" height="265" id="svg11242"></svg>
+</script>
+
 
 </svg>
 
-<script type="image/svg+xml">
-  <svg width="466" height="265" id="svg11242"></svg>
-</script>
