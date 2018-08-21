@@ -11,4 +11,4 @@
 </object>
 
 
-<iframe src="https://github.com/domon80501/drawio/blob/master/test.svg"></iframe>
+<iframe src="https://github.com/domon80501/drawio/blob/master/test.svg"> </iframe>
