@@ -7,6 +7,6 @@
       onmouseover="this.style.stroke = '#ff0000'; this.style['stroke-width'] = 5;"
       onmouseout="this.style.stroke = '#000000'; this.style['stroke-width'] = 1;"
 />       
-            <text x="0" y="15" fill="red">I love SVG!</text>
+            <text x="0" y="15" fill="red" value="I love SVG!"></text>
       </g>
 </svg>
