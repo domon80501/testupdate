@@ -1,15 +1,19 @@
-<?xml version="1.0" encoding="utf-8"?>
-
-   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 110 40" width="100%" height="100%">
-    <title>Button</title>
-    <defs>
-      <ref id="paramFill" param="color" default="blue"/>
-      <ref id="paramStroke" param="outline" default="navy"/>
-    </defs>
-    <g>
-      <rect id="button_rect" x="5" y="5" width="100" height="30" rx="15" ry="15" fill="url(#paramFill)" stroke="url(#paramStroke)" />
-    </g>
-  </svg>
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<radialGradient id="fire" 
+cx="250" cy="80" r="150" fx="150" fy="80" 
+gradientUnits="userSpaceOnUse">
+<stop offset="0" stop-color="#FF0088"/>
+<stop offset="0.4" stop-color="#FFdd88"/>
+<stop offset="1" stop-color="#88aa00"/>
+</radialGradient>
+</defs>
+<path d="M 50 200 L 350 200 L 250 60 L 180 10z"
+stroke="black" fill="url(#fire)" stroke-width="5" />
+<ellipse id="E" cx="150" cy="120" rx="100" ry="40" 
+fill="red" stroke="black" opacity=".75">
+<animate attributeName="cx" dur="2s" 
+values="150;250;150" repeatCount="indefinite"/>
+</ellipse>
 </svg>
-
-
