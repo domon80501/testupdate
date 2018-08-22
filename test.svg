@@ -1,19 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg"
-     xmlns:xlink="http://www.w3.org/1999/xlink" width="500" height="700">
+<svg xml:space="preserve" 
+width="7in" height="5in" viewBox="0 0 450 200">
 <defs>
-<radialGradient id="fire" 
-cx="250" cy="80" r="150" fx="150" fy="80" 
-gradientUnits="userSpaceOnUse">
-<stop offset="0" stop-color="#FF0088"/>
-<stop offset="0.4" stop-color="#FFdd88"/>
-<stop offset="1" stop-color="#88aa00"/>
+<filter id="Distort">
+<feTurbulence id="Turb" 
+baseFrequency=".05" numOctaves="2" result="turb"/>
+<feDisplacementMap in="SourceGraphic" 
+in2="turb" scale="100" xChannelSelector="R" 
+yChannelSelector="B"/>
+</filter>
+<radialGradient id="gradient1" 
+cx="250" cy="80" r="150" fx="150" fy="80" gradientUnits="userSpaceOnUse">
+<stop offset="0" style="stop-color:#FF0088"/>
+<stop offset="0.4" style="stop-color:#FFdd88"/>
+<stop offset="0.8" style="stop-color:#ddff44"/>
+<stop offset="1" style="stop-color:#88aa00"/>
 </radialGradient>
 </defs>
-<path d="M 50 200 L 350 200 L 250 60 L 180 10z"
-stroke="black" fill="url(#fire)" stroke-width="5" />
-<ellipse id="E" cx="150" cy="120" rx="100" ry="40" 
-fill="red" stroke="black" opacity=".75">
-<animate attributeName="cx" dur="2s" 
-values="150;250;150" repeatCount="indefinite"/>
-</ellipse>
+
+<g id="image" style="filter:url(#Distort)">
+<path id="P" 
+d="M 50 200 L 350 200 L 280 10 L 250 60 L 180 10z" style="fill:url(#gradient1)"/>
+</g>
 </svg>
