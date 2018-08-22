@@ -1,4 +1,8 @@
 <script language="text/javascript">
+  document.ready(function(){
+alert('123');
+})
+  
   function mouseMove(evt){
         svgtar=evt.target    
         svgdoc=svgtar.ownerDocument;
