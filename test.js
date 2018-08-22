@@ -1,4 +1,4 @@
-<script language="javascript">
+<script language="text/javascript">
   function mouseMove(evt){
         svgtar=evt.target    
         svgdoc=svgtar.ownerDocument;
