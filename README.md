@@ -1,4 +1,6 @@
 
+import 'github-domon.css'
+
 
 # drawio
 
