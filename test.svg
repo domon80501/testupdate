@@ -2,7 +2,9 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
 "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11-flat-20030114.dtd">
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%">
-
- <script type="text/javascript" xlink:href="test.js"></script>
- <rect id="rect1" x="40" y="35" width="50" height="20" style="fill:red" onmousemove="mouseMove(evt)" onmouseout="mouseOut(evt)"></rect>
+<rect x="10" y="10" width="100" height="75"
+      style="stroke: #000000; fill: #eeeeee;"
+      onmouseover="this.style.stroke = '#ff0000'; this.style['stroke-width'] = 5;"
+      onmouseout="this.style.stroke = '#000000'; this.style['stroke-width'] = 1;"
+/>            
 </svg>
