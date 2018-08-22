@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg"
-     xmlns:xlink="http://www.w3.org/1999/xlink" width=500 height=700>
+     xmlns:xlink="http://www.w3.org/1999/xlink" width="500" height="700">
 <defs>
 <radialGradient id="fire" 
 cx="250" cy="80" r="150" fx="150" fy="80" 
